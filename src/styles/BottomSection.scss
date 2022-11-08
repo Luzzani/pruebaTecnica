@@ -1,0 +1,71 @@
+@import './colors';
+
+
+.bottom-container {
+    position: relative;
+    top: 8rem;
+    width: 100vw;
+    background-color: $colorWhite;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    div {
+        width: fit-content;
+        margin: 0 auto;
+        text-align: center;
+        &:nth-child(3) {
+            h3, h4 {
+                margin: .5rem;
+            }
+        }
+        >form {
+            position: relative;
+            top: 20px;
+        }
+        >form >button{
+            background-color: transparent;
+            border: none;
+            position: relative;
+            left: -50px;
+            cursor: pointer;
+        }
+        input {
+            width: 750px;
+            height: 50px;
+            margin-bottom: 5rem;
+            &::placeholder {
+                color: $colorBlack;
+                position: relative;
+                left: 10px;
+            }
+        }
+        b {
+            color: crimson;
+        }
+
+    }
+
+    span {
+        color: $colorGrey;
+        font-size: 1.3rem;
+    }
+    h3 {
+        font-size: 3rem;
+        font-weight: 100;
+        margin-top: 0;
+    }
+   
+    .collage-image {
+        position: relative;
+        top: 80px;
+        width: fit-content;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        img {
+            width: 250px;
+            height: 250px;
+            border: .5px solid white;
+        }
+    }
+}

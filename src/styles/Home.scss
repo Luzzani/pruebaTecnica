@@ -1,0 +1,46 @@
+@import './colors';
+
+.home-container {
+    position: relative;
+    top: 0;
+    width: 100vw;
+    height: 110vh;
+    background: url(../assets/homeimage0.jpg) 50%;
+    background-size: cover;
+    .home-title-container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h1 {
+            font-size: 5rem;
+            color: $colorWhite;
+            text-shadow: 0 0 2px black;
+            text-align: center;
+            font-family: sans-serif;
+            font-weight: 100;
+        }
+        button {
+            background-color: transparent;
+            border: 2px solid $colorWhite;
+            width: fit-content;
+            padding: 1rem 2rem;
+            cursor: pointer;
+            color: $colorWhite;
+        }
+        .home-button-container {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            top: 140px;
+            div {
+                display: flex;
+                gap: 1rem;
+                position: absolute;
+                top: 130px;
+                left: 20px;
+            }
+        }
+    }
+}

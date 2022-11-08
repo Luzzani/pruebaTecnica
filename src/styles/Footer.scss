@@ -1,0 +1,47 @@
+@import './colors';
+
+footer {
+    border-top: 1px solid transparent;
+    box-shadow: 0 0 10px 0 rgb(136, 132, 132);
+    top: 12rem;
+    position: relative;
+    height: 50vh;
+    background-color: $colorWhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    >div {
+        display: flex;
+        justify-content: space-between;
+        margin:50px;
+    }
+    ul {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        font-weight: bolder;
+        list-style-type: none;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50px;
+            margin-left: 280px;
+            border-right: 1px solid $colorGrey;
+            height: 110px;
+        }
+        li {
+            a{
+                color: $colorBlack;
+            }
+            margin: .5rem;
+        }
+        span {
+            display: block;
+            font-size: .7rem;
+            position: relative;
+            top: -50px;
+            left: 130px;
+        }
+    }
+}

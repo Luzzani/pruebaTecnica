@@ -1,0 +1,85 @@
+@import './colors';
+
+.section-container {
+    position: relative;
+    width: 100vw;
+    height: 80vh;
+    background-color: $colorWhite;
+    display: flex;
+    flex-direction: row-reverse;
+
+    >div {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        &:nth-child(1) {
+            background: url(../assets/personasEnPuff.jpg);
+            background-size: cover;
+        }
+        &:nth-child(2) {
+            gap: 1rem;
+            &::after {
+                content: '';
+                width: 50px;
+                height: 50px;
+                background-color:$colorWhite;
+                position: absolute;
+                right: -10px;
+                transform: rotate(45deg);
+            }
+        }
+        >div {
+            position: absolute;
+            background-color: rgba(0,0,0, .6);
+            width: 100%;
+            height: 100%;
+        }
+        img {
+            width: 150px;
+        }
+        h2 {
+            font-size: 2rem;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 400;
+            span {
+                text-transform: uppercase;
+            }
+        }
+        p {
+            font-size: 1.3rem;
+            width: 30%;
+            text-align: center;
+            margin: 0 auto;
+            position: relative;
+            &::after {
+                content: '';
+                width: 50px;
+                height: 10px;
+                margin-left: -140px;
+                margin-top: 40px;
+                position: absolute;
+                border-bottom: 1px solid rgb(0, 0, 0);
+            }
+        }
+        a {
+            color: $colorGrey;
+            font-size: 1.5rem;
+            position: relative;
+            top: 50px;
+
+        }
+    }
+    button {
+        position: relative;
+        z-index: 10;
+        background-color: transparent;
+        border: 2px solid white;
+        padding: 1rem 2rem;
+        color: $colorWhite;
+        text-shadow: 0 0 1px black;
+        cursor: pointer;
+    }
+}

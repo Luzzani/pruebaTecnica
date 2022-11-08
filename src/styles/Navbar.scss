@@ -1,0 +1,63 @@
+@import './colors';
+
+.navbar-container {
+    position: absolute;
+    width: 100vw;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+
+    span {
+        margin-left: 50px;
+    }
+
+    .navbar-links {
+        position: relative;
+        left: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-left:1px solid white ;
+            border-right:1px solid white ;
+            width: 150px;
+            color: $colorWhite;
+            font-weight: bolder;
+            font-size: 1.3rem;
+            &:nth-child(1) {
+                border: none;
+            }
+            &:nth-child(3) {
+                border: none;
+            }
+            &:nth-child(4) {
+                border-right: none;
+            }
+            img {
+                width: 50px;
+            }
+        }
+        
+    }
+    .navbar-buttons{
+        margin-right: 50px;
+        button {
+            background-color: transparent;
+            color: $colorWhite;
+            border: none;
+            font-size: 1.3rem;
+            border-right: 1px solid white;
+            padding: 0 1rem;
+            cursor: pointer;
+            &:nth-child(2) {
+                border-right: none;
+            }
+        }
+    }
+}

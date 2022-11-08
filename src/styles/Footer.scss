@@ -32,7 +32,7 @@ footer {
             content: '';
             position: absolute;
             top: 50px;
-            margin-left: 280px;
+            margin-left: 15%;
             border-right: 1px solid $colorGrey;
             height: 110px;
         }
@@ -53,6 +53,7 @@ footer {
     .socials-footer {
         position: relative;
         right: 50px;
+        font-weight: bolder;
         svg {
             font-size: 1.5rem;
             margin-left: 1rem;

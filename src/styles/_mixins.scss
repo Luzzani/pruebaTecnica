@@ -16,3 +16,13 @@
     justify-content: center;
     align-items: center;
 }
+
+@mixin buttonStyle {
+    background-color: transparent;
+    border: 2px solid $colorWhite;
+    width: fit-content;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    color: $colorWhite;
+    text-shadow: 0 0 1px black;
+}

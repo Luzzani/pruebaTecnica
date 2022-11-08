@@ -69,11 +69,6 @@
     button {
         position: relative;
         z-index: 10;
-        background-color: transparent;
-        border: 2px solid white;
-        padding: 1rem 2rem;
-        color: $colorWhite;
-        text-shadow: 0 0 1px black;
-        cursor: pointer;
+        @include buttonStyle;
     }
 }

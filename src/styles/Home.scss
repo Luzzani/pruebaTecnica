@@ -20,12 +20,7 @@
             font-weight: 100;
         }
         button {
-            background-color: transparent;
-            border: 2px solid $colorWhite;
-            width: fit-content;
-            padding: 1rem 2rem;
-            cursor: pointer;
-            color: $colorWhite;
+           @include buttonStyle;
         }
         .home-button-container {
             display: flex;

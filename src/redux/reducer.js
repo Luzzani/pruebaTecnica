@@ -1,7 +1,7 @@
 import { EMAIL } from "./action";
 
 const initialState = {
-  email: [],
+  email: '',
 };
 
 export default function rootReducer(state = initialState, action) {

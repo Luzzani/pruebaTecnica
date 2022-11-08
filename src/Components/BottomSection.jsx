@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
+
 import { setInputEmail } from "../redux/action";
 
 import FOTO1 from "../assets/collage1.jpg";

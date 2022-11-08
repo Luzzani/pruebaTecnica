@@ -62,7 +62,7 @@ function Footer() {
             </span>
           </li>
         </ul>
-        <div>
+        <div className="socials-footer">
           <span>
             SEGUINOS EN <FaFacebookF />
             <AiOutlineTwitter />
@@ -70,7 +70,7 @@ function Footer() {
           </span>
         </div>
       </div>
-      <div>
+      <div className="bottom-footer">
         <p>PUFI Copyright 2017 - Todos los derechos reservados</p>
         <img src={BRAND} alt="brand" />
       </div>

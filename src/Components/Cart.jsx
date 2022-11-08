@@ -9,7 +9,7 @@ function Cart() {
         style={{ background: `url(${BAGCAR})`, backgroundSize: " cover" }}
       ></div>
       <div>
-        <img src={CART} alt="carteras" height={"250px"} />
+        <img src={CART} alt="carteras"/>
         <h2>Pufi CART</h2>
         <p>Descripción del producto. Este es un texto simulado</p>
         <a href="·">{"> ver mas"}</a>

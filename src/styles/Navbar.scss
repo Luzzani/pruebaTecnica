@@ -1,12 +1,11 @@
 @import './colors';
+@import './mixins';
 
 .navbar-container {
     position: absolute;
     width: 100vw;
     height: 150px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex-row;
     z-index: 10;
 
     span {
@@ -16,14 +15,9 @@
     .navbar-links {
         position: relative;
         left: 60px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex-row-center;
         a {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            @include flex-column;
             border-left:1px solid white ;
             border-right:1px solid white ;
             width: 150px;

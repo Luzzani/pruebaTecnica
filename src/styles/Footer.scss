@@ -2,7 +2,7 @@
 
 footer {
     border-top: 1px solid transparent;
-    box-shadow: 0 0 10px 0 rgb(136, 132, 132);
+    box-shadow: 0 0 10px 0 rgba(171, 165, 165, 0.732);
     top: 12rem;
     position: relative;
     height: 50vh;
@@ -10,10 +10,16 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
+    b{
+        display: block;
+        width: 90%;
+        height: 10px;
+        background-color: $colorGrey;
+    }
     >div {
         display: flex;
         justify-content: space-between;
+        align-items: flex-start;
         margin:50px;
     }
     ul {
@@ -43,5 +49,31 @@ footer {
             top: -50px;
             left: 130px;
         }
+    }
+    .socials-footer {
+        position: relative;
+        right: 50px;
+        svg {
+            font-size: 1.5rem;
+            margin-left: 1rem;
+        }
+    }
+    .bottom-footer{
+        position: relative;
+        color:  $colorGrey;
+        img {
+            align-self: flex-end;
+            position: absolute;
+            right: 50px;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 0;
+            border-top: 1px solid  $colorGrey;
+            margin-top: -20px;
+        }
+
     }
 }
